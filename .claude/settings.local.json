@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(start *)",
-      "WebFetch(domain:tridentphotobooths.ca)",
-      "WebFetch(domain:www.google.com)"
-    ]
-  }
-}

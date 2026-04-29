@@ -1,2 +1,16 @@
+# Claude
 .claude/
-.claude-design-skills/
+claude-design-skills/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.suo
+*.user
+
+# Logs & temp
+*.log
+*.tmp

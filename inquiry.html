@@ -5,12 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inquire — Trident Photobooths</title>
-  <meta name="description" content="Tell us about your event and we'll put together the perfect photobooth package. Serving Manitoba and Saskatchewan.">
+  <meta name="description"
+    content="Tell us about your event and we'll put together the perfect photobooth package. Serving Manitoba and Saskatchewan.">
   <meta name="robots" content="index, follow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,200;1,9..144,300;1,9..144,400&family=Outfit:wght@300;400;500;600&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet">
 
   <style>
     /* ============================================
@@ -32,9 +35,9 @@
       --text-muted: #6b6762;
       --text-faint: #9e9a95;
 
-      --accent: #a06898;
-      --accent-bright: #b87aaa;
-      --shadow-accent: 0 0 24px rgba(160, 104, 152, 0.14);
+      --accent: #FF7247;
+      --accent-bright: #FF7247;
+      --shadow-accent: 0 0 24px rgba(255, 114, 71, 0.20);
 
       --nav-bg: rgba(245, 245, 240, 0.92);
       --grain-opacity: 0.02;
@@ -58,9 +61,9 @@
       --text-muted: #888582;
       --text-faint: #5c5a58;
 
-      --accent: #a06898;
-      --accent-bright: #b87aaa;
-      --shadow-accent: 0 0 28px rgba(160, 104, 152, 0.22);
+      --accent: #FF7247;
+      --accent-bright: #FF7247;
+      --shadow-accent: 0 0 28px rgba(112, 57, 21, 0.22);
 
       --nav-bg: rgba(12, 12, 12, 0.92);
       --grain-opacity: 0.025;
@@ -70,7 +73,7 @@
        SHARED TOKENS
     ============================================ */
     :root {
-      --font-display: 'Fraunces', 'Georgia', serif;
+      --font-display: 'Playfair Display', 'Georgia', serif;
       --font-ui: 'Outfit', system-ui, sans-serif;
       --font-mono: 'DM Mono', 'Menlo', monospace;
 
@@ -85,13 +88,16 @@
     /* ============================================
        RESET & BASE
     ============================================ */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    html, body {
+    html,
+    body {
       height: 100%;
     }
 
@@ -115,12 +121,28 @@
       mix-blend-mode: overlay;
     }
 
-    a { color: inherit; text-decoration: none; }
-    button { font-family: var(--font-ui); cursor: pointer; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-    ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: var(--bg-base); }
-    ::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 10px; }
+    button {
+      font-family: var(--font-ui);
+      cursor: pointer;
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg-base);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border-default);
+      border-radius: 10px;
+    }
 
     /* ============================================
        NAV
@@ -162,16 +184,20 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
-      filter: invert(1);
     }
 
-    [data-theme="dark"] .nav-logo-mark img { filter: none; }
+    [data-theme="dark"] .nav-logo-mark img {
+      filter: none;
+    }
 
-    .nav-brand-text { display: flex; flex-direction: column; }
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
 
     .nav-brand-name {
-      font-family: var(--font-display);
-      font-weight: 700;
+      font-family: var(--font-ui);
+      font-weight: 800;
       font-size: 1.05rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
@@ -181,60 +207,60 @@
     }
 
     .nav-brand-sub {
-      font-family: var(--font-mono);
+      font-family: var(--font-ui);
       font-size: 0.6rem;
       color: var(--text-muted);
-      letter-spacing: 0.1em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
+      opacity: 0.5;
       transition: color 0.3s;
     }
 
     .nav-right {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 24px;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 28px;
       list-style: none;
     }
 
     .nav-links a {
-      font-size: 0.82rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
       color: var(--text-muted);
-      padding: 6px 14px;
-      border-radius: var(--radius-md);
-      transition: color 0.15s, background 0.15s;
-      letter-spacing: 0.02em;
+      transition: color 0.3s;
     }
 
-    .nav-links a:hover {
-      color: var(--text-primary);
-      background: var(--bg-elevated);
-    }
-
+    .nav-links a:hover,
     .nav-links a.active {
       color: var(--text-primary);
     }
 
     .nav-cta {
-      padding: 9px 22px;
-      background: var(--accent);
-      color: #0d0d0d !important;
-      border-radius: var(--radius-xl);
-      font-weight: 600;
-      font-size: 0.82rem !important;
-      letter-spacing: 0.02em;
-      transition: background 0.15s, box-shadow 0.15s !important;
-      box-shadow: var(--shadow-accent);
+      padding: 10px 24px;
+      background: none;
+      border: 1px solid var(--border-default) !important;
+      color: var(--text-primary) !important;
+      border-radius: var(--radius-sm);
+      font-weight: 500;
+      font-size: 0.72rem !important;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      transition: background 0.3s, color 0.3s, border-color 0.3s !important;
+      margin-left: 0;
     }
 
     .nav-cta:hover {
-      background: var(--accent-bright) !important;
-      box-shadow: 0 0 32px rgba(160, 104, 152, 0.28) !important;
+      background: var(--text-primary) !important;
+      color: var(--bg-base) !important;
+      border-color: var(--text-primary) !important;
     }
 
     /* Theme toggle */
@@ -260,11 +286,26 @@
       color: var(--text-primary);
     }
 
-    .theme-toggle svg { width: 16px; height: 16px; }
-    .icon-sun { display: none; }
-    .icon-moon { display: block; }
-    [data-theme="dark"] .icon-sun { display: block; }
-    [data-theme="dark"] .icon-moon { display: none; }
+    .theme-toggle svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .icon-sun {
+      display: none;
+    }
+
+    .icon-moon {
+      display: block;
+    }
+
+    [data-theme="dark"] .icon-sun {
+      display: block;
+    }
+
+    [data-theme="dark"] .icon-moon {
+      display: none;
+    }
 
     /* Hamburger */
     .nav-hamburger {
@@ -287,9 +328,17 @@
       transition: transform 0.25s, opacity 0.25s;
     }
 
-    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
-    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .nav-hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
 
     /* Mobile menu */
     .nav-mobile-menu {
@@ -309,7 +358,9 @@
       transition: background 0.3s;
     }
 
-    .nav-mobile-menu.open { display: flex; }
+    .nav-mobile-menu.open {
+      display: flex;
+    }
 
     .nav-mobile-menu a {
       font-size: 0.9rem;
@@ -331,10 +382,21 @@
     }
 
     @media (max-width: 840px) {
-      .nav { padding: 0 20px; }
-      .nav-links { display: none; }
-      .nav-hamburger { display: flex; }
-      .theme-toggle { display: none; }
+      .nav {
+        padding: 0 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-hamburger {
+        display: flex;
+      }
+
+      .theme-toggle {
+        display: none;
+      }
     }
 
     /* ============================================
@@ -350,7 +412,7 @@
       -webkit-overflow-scrolling: touch;
     }
 
-    .form-fullscreen > div {
+    .form-fullscreen>div {
       width: 100%;
       min-height: calc(100vh - var(--nav-h));
     }
@@ -370,7 +432,7 @@
   <nav class="nav" id="mainNav">
     <a href="index.html" class="nav-brand">
       <div class="nav-logo-mark">
-        <img src="./images/logos/16.png" alt="Trident Photobooth logo">
+        <img src="./images/logos/TP_Colour_2026.png" alt="Trident Photobooth logo">
       </div>
       <div class="nav-brand-text">
         <span class="nav-brand-name">Trident</span>
@@ -390,10 +452,12 @@
       <a href="inquiry.html" class="nav-cta" style="margin-left:8px;">Inquire</a>
 
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5" />
           <line x1="12" y1="1" x2="12" y2="3" />
           <line x1="12" y1="21" x2="12" y2="23" />
@@ -425,7 +489,8 @@
 
   <!-- FULL-SCREEN FORM -->
   <div class="form-fullscreen">
-    <div data-fillout-id="mMAmQDRiZCus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-domain="tridenteventgroup.fillout.com"></div>
+    <div data-fillout-id="mMAmQDRiZCus" data-fillout-embed-type="standard" data-fillout-inherit-parameters
+      data-fillout-domain="tridenteventgroup.fillout.com"></div>
     <script src="https://server.fillout.com/embed/v1/"></script>
   </div>
 
@@ -462,4 +527,5 @@
   </script>
 
 </body>
+
 </html>

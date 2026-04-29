@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquire — Trident Photobooths</title>
+  <meta name="description" content="Tell us about your event and we'll put together the perfect photobooth package. Serving Manitoba and Saskatchewan.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,200;1,9..144,300;1,9..144,400&family=Outfit:wght@300;400;500;600&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       LIGHT THEME
+    ============================================ */
+    :root,
+    [data-theme="light"] {
+      --bg-base: #f5f5f0;
+      --bg-surface: #edecea;
+      --bg-elevated: #e4e2de;
+      --bg-raised: #d8d5cf;
+
+      --border-faint: #e8e5e0;
+      --border-subtle: #dedad4;
+      --border-default: #c8c4bc;
+
+      --text-primary: #0d0d0d;
+      --text-secondary: #2a2a2a;
+      --text-muted: #6b6762;
+      --text-faint: #9e9a95;
+
+      --accent: #a06898;
+      --accent-bright: #b87aaa;
+      --shadow-accent: 0 0 24px rgba(160, 104, 152, 0.14);
+
+      --nav-bg: rgba(245, 245, 240, 0.92);
+      --grain-opacity: 0.02;
+    }
+
+    /* ============================================
+       DARK THEME
+    ============================================ */
+    [data-theme="dark"] {
+      --bg-base: #0c0c0c;
+      --bg-surface: #141414;
+      --bg-elevated: #1c1c1c;
+      --bg-raised: #242424;
+
+      --border-faint: #1e1e1e;
+      --border-subtle: #262626;
+      --border-default: #333333;
+
+      --text-primary: #f2f2f0;
+      --text-secondary: #c8c6c2;
+      --text-muted: #888582;
+      --text-faint: #5c5a58;
+
+      --accent: #a06898;
+      --accent-bright: #b87aaa;
+      --shadow-accent: 0 0 28px rgba(160, 104, 152, 0.22);
+
+      --nav-bg: rgba(12, 12, 12, 0.92);
+      --grain-opacity: 0.025;
+    }
+
+    /* ============================================
+       SHARED TOKENS
+    ============================================ */
+    :root {
+      --font-display: 'Fraunces', 'Georgia', serif;
+      --font-ui: 'Outfit', system-ui, sans-serif;
+      --font-mono: 'DM Mono', 'Menlo', monospace;
+
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 14px;
+      --radius-xl: 22px;
+
+      --nav-h: 68px;
+    }
+
+    /* ============================================
+       RESET & BASE
+    ============================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: var(--font-ui);
+      background: var(--bg-base);
+      color: var(--text-primary);
+      overflow-x: hidden;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* Film grain */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: var(--grain-opacity);
+      pointer-events: none;
+      z-index: 9999;
+      mix-blend-mode: overlay;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font-family: var(--font-ui); cursor: pointer; }
+
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg-base); }
+    ::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 10px; }
+
+    /* ============================================
+       NAV
+    ============================================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 0 40px;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-faint);
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-mark {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-logo-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: invert(1);
+    }
+
+    [data-theme="dark"] .nav-logo-mark img { filter: none; }
+
+    .nav-brand-text { display: flex; flex-direction: column; }
+
+    .nav-brand-name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      line-height: 1.1;
+      transition: color 0.3s;
+    }
+
+    .nav-brand-sub {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: var(--radius-md);
+      transition: color 0.15s, background 0.15s;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+      background: var(--bg-elevated);
+    }
+
+    .nav-links a.active {
+      color: var(--text-primary);
+    }
+
+    .nav-cta {
+      padding: 9px 22px;
+      background: var(--accent);
+      color: #0d0d0d !important;
+      border-radius: var(--radius-xl);
+      font-weight: 600;
+      font-size: 0.82rem !important;
+      letter-spacing: 0.02em;
+      transition: background 0.15s, box-shadow 0.15s !important;
+      box-shadow: var(--shadow-accent);
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-bright) !important;
+      box-shadow: 0 0 32px rgba(160, 104, 152, 0.28) !important;
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-md);
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      flex-shrink: 0;
+      margin-left: 8px;
+    }
+
+    .theme-toggle:hover {
+      background: var(--bg-raised);
+      border-color: var(--border-default);
+      color: var(--text-primary);
+    }
+
+    .theme-toggle svg { width: 16px; height: 16px; }
+    .icon-sun { display: none; }
+    .icon-moon { display: block; }
+    [data-theme="dark"] .icon-sun { display: block; }
+    [data-theme="dark"] .icon-moon { display: none; }
+
+    /* Hamburger */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 6px;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text-secondary);
+      border-radius: 2px;
+      transition: transform 0.25s, opacity 0.25s;
+    }
+
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+    .nav-mobile-menu {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0;
+      right: 0;
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-faint);
+      padding: 16px 20px 24px;
+      z-index: 99;
+      flex-direction: column;
+      gap: 4px;
+      transition: background 0.3s;
+    }
+
+    .nav-mobile-menu.open { display: flex; }
+
+    .nav-mobile-menu a {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .nav-mobile-menu a:hover {
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+    }
+
+    .nav-mobile-menu .nav-cta {
+      margin-top: 8px;
+      text-align: center;
+      color: #0d0d0d !important;
+    }
+
+    @media (max-width: 840px) {
+      .nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .theme-toggle { display: none; }
+    }
+
+    /* ============================================
+       FULL-SCREEN FORM
+    ============================================ */
+    .form-fullscreen {
+      position: fixed;
+      top: var(--nav-h);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .form-fullscreen > div {
+      width: 100%;
+      min-height: calc(100vh - var(--nav-h));
+    }
+
+    /* Force the iframe Fillout injects to fill the container */
+    .form-fullscreen iframe {
+      width: 100% !important;
+      min-height: calc(100vh - var(--nav-h)) !important;
+      border: none !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-mark">
+        <img src="./images/logos/16.png" alt="Trident Photobooth logo">
+      </div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Trident</span>
+        <span class="nav-brand-sub">Photobooth</span>
+      </div>
+    </a>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#booths">Open Air</a></li>
+        <li><a href="index.html#booth-360">360 Booth</a></li>
+        <li><a href="index.html#booth-glam">Glam Booth</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+      <a href="inquiry.html" class="nav-cta" style="margin-left:8px;">Inquire</a>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+      </button>
+
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile-menu" id="navMobileMenu">
+    <a href="index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="index.html#booths" onclick="closeMobileMenu()">Open Air Photobooth</a>
+    <a href="index.html#booth-360" onclick="closeMobileMenu()">360 Booth</a>
+    <a href="index.html#booth-glam" onclick="closeMobileMenu()">Glam Booth</a>
+    <a href="gallery.html" onclick="closeMobileMenu()">Gallery</a>
+    <a href="index.html#faq" onclick="closeMobileMenu()">FAQ</a>
+    <a href="inquiry.html" class="nav-cta" onclick="closeMobileMenu()">Inquire Now</a>
+  </div>
+
+  <!-- FULL-SCREEN FORM -->
+  <div class="form-fullscreen">
+    <div data-fillout-id="mMAmQDRiZCus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-domain="tridenteventgroup.fillout.com"></div>
+    <script src="https://server.fillout.com/embed/v1/"></script>
+  </div>
+
+  <script>
+    /* Theme toggle */
+    const html = document.documentElement;
+    const STORAGE_KEY = 'trident-theme';
+
+    function applyTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem(STORAGE_KEY, theme);
+    }
+
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) applyTheme(saved);
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+
+    /* Mobile menu */
+    const hamburger = document.getElementById('navHamburger');
+    const mobileMenu = document.getElementById('navMobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+    });
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+    }
+  </script>
+
+</body>
+</html>

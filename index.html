@@ -387,8 +387,8 @@
     }
 
     .nav-logo-mark {
-      width: 40px;
-      height: 40px;
+      width: 64px;
+      height: 64px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -667,9 +667,9 @@
 
     .hero-headline {
       font-family: var(--font-display);
-      font-size: clamp(2.8rem, 7vw, 6rem);
+      font-size: clamp(2rem, 5vw, 4rem);
       font-weight: 400;
-      line-height: 1.08;
+      line-height: 1.12;
       letter-spacing: -0.01em;
       color: var(--text-primary);
       max-width: 880px;
@@ -1732,8 +1732,8 @@
     }
 
     .footer-logo-mark {
-      width: 32px;
-      height: 32px;
+      width: 48px;
+      height: 48px;
       background: var(--accent);
       border-radius: var(--radius-sm);
       display: flex;
@@ -1743,10 +1743,10 @@
     }
 
     .footer-logo-mark img {
-      width: 20px;
-      height: 20px;
+      width: 32px;
+      height: 32px;
       object-fit: contain;
-      filter: brightness(0);
+      filter: brightness(0) invert(1);
     }
 
     .footer-brand-name {
@@ -1968,10 +1968,6 @@
       <div class="nav-logo-mark">
         <img src="./images/logos/TP_Colour_2026.png" alt="Trident-photobooth logo">
       </div>
-      <div class="nav-brand-text">
-        <span class="nav-brand-name">Trident</span>
-        <span class="nav-brand-sub">Photobooth</span>
-      </div>
     </div>
 
     <div class="nav-right">
@@ -2047,7 +2043,7 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-overline" id="heroOverline">Brandon, Manitoba</div>
+    <div class="hero-overline" id="heroOverline">Serving Manitoba & Saskatchewan</div>
 
     <h1 class="hero-headline">
       Modern Photo &amp; Video Booth Rentals for <em>Weddings &amp; Events</em>
@@ -2897,7 +2893,6 @@
             <div class="footer-logo-mark">
               <img src="./images/logos/TP_Colour_2026.png" alt="Trident logo">
             </div>
-            <span class="footer-brand-name">Trident</span>
           </div>
           <p class="footer-desc">Premium photo and video booth rentals for weddings and events in Brandon, Manitoba and
             across the prairies.</p>
@@ -2946,7 +2941,7 @@
     const locationData = {
       all: {
         label: 'All Locations',
-        overline: 'Brandon · Winnipeg · Regina',
+        overline: 'Serving Manitoba & Saskatchewan',
         sub: 'Premium photobooth experiences across Manitoba and Saskatchewan — open air, 360-degree immersive, and luxury glam options for every occasion.',
         title: 'Trident Photobooths — Photo & Video Booth Rentals | Manitoba & Saskatchewan',
         desc: 'Premium photo and video booth rentals for weddings and events across Manitoba and Saskatchewan. Open Air, 360-degree, and Glam booth experiences — serving Brandon, Winnipeg, Regina and beyond.',

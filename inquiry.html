@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap"
     rel="stylesheet">
 
   <style>
@@ -78,7 +78,8 @@
     :root {
       --font-display: 'Playfair Display', 'Georgia', serif;
       --font-ui: 'Outfit', system-ui, sans-serif;
-      --font-mono: 'DM Mono', 'Menlo', monospace;
+      /* brand uses only Playfair Display + Outfit; eyebrow/label style via letter-spacing, not a mono face */
+      --font-mono: 'Outfit', system-ui, sans-serif;
 
       --radius-sm: 4px;
       --radius-md: 8px;
@@ -420,7 +421,7 @@
       min-height: calc(100vh - var(--nav-h));
     }
 
-    /* Force the iframe Fillout injects to fill the container */
+    /* Force the embedded OpnForm iframe to fill the container */
     .form-fullscreen iframe {
       width: 100% !important;
       min-height: calc(100vh - var(--nav-h)) !important;
@@ -488,9 +489,8 @@
 
   <!-- FULL-SCREEN FORM -->
   <div class="form-fullscreen">
-    <div data-fillout-id="mMAmQDRiZCus" data-fillout-embed-type="standard" data-fillout-inherit-parameters
-      data-fillout-domain="tridenteventgroup.fillout.com"></div>
-    <script src="https://server.fillout.com/embed/v1/"></script>
+    <iframe src="https://forms.tridenteventgroup.ca/forms/photo-booth-booking-inquiry-giwbvp"
+      title="Photo Booth Booking Inquiry" loading="lazy" allow="clipboard-write"></iframe>
   </div>
 
   <script>

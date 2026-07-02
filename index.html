@@ -164,7 +164,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <style>
     /* ============================================
@@ -201,6 +201,13 @@
 
       --nav-bg: rgba(245, 245, 240, 0.88);
       --grain-opacity: 0.02;
+
+      /* hero photo scrim — light: keeps dark headline readable, fades into page */
+      --hero-overlay: linear-gradient(180deg,
+          rgba(245, 245, 240, 0.74) 0%,
+          rgba(245, 245, 240, 0.82) 45%,
+          rgba(245, 245, 240, 0.94) 78%,
+          var(--bg-base) 100%);
 
       /* booth card visual tints — light */
       --booth-1-bg: linear-gradient(145deg, #fff0e8 0%, #FFB07A 60%, #FF7247 100%);
@@ -250,6 +257,13 @@
       --nav-bg: rgba(12, 12, 12, 0.88);
       --grain-opacity: 0.025;
 
+      /* hero photo scrim — dark: keeps light headline readable, fades into page */
+      --hero-overlay: linear-gradient(180deg,
+          rgba(12, 12, 12, 0.62) 0%,
+          rgba(12, 12, 12, 0.74) 45%,
+          rgba(12, 12, 12, 0.90) 78%,
+          var(--bg-base) 100%);
+
       /* booth card visual tints — dark */
       --booth-1-bg: linear-gradient(145deg, #1a0c06 0%, #4a1c08 60%, #FF7247 100%);
       --booth-2-bg: linear-gradient(145deg, #160a04 0%, #3a1606 60%, #c04428 100%);
@@ -270,7 +284,8 @@
     :root {
       --font-display: 'Playfair Display', 'Georgia', serif;
       --font-ui: 'Outfit', system-ui, sans-serif;
-      --font-mono: 'DM Mono', 'Menlo', monospace;
+      /* brand uses only Playfair Display + Outfit; eyebrow/label style via letter-spacing, not a mono face */
+      --font-mono: 'Outfit', system-ui, sans-serif;
 
       --radius-sm: 4px;
       --radius-md: 8px;
@@ -633,6 +648,10 @@
       padding: 120px 40px 100px;
       position: relative;
       overflow: hidden;
+      background-image: var(--hero-overlay), url("./images/downloaded/openAir.webp");
+      background-size: cover, cover;
+      background-position: center, center 30%;
+      background-repeat: no-repeat, no-repeat;
     }
 
     .hero::before {
@@ -1365,7 +1384,7 @@
     ============================================ */
     .about-inner {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.4fr;
       gap: 80px;
       align-items: center;
     }
@@ -1411,7 +1430,7 @@
     .about-team-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 158px 158px 158px;
+      grid-template-rows: 220px 220px 220px;
       gap: 8px;
       grid-template-areas:
         "a b c"
@@ -1470,9 +1489,9 @@
       right: 0;
       padding: 24px 10px 10px;
       background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
-      font-family: var(--font-display);
+      font-family: var(--font-ui);
       font-size: 0.78rem;
-      font-weight: 300;
+      font-weight: 500;
       color: rgba(255, 255, 255, 0.92);
       letter-spacing: 0.05em;
       opacity: 0;

@@ -2708,10 +2708,10 @@
       <div class="locations-header reveal">
         <div class="section-label">Service Area</div>
         <h2 class="section-headline">We travel to <em>where you celebrate</em></h2>
-        <p class="section-body">Serving Winnipeg, Regina, Calgary, and celebrations across Manitoba, Saskatchewan, and Alberta — from
+        <p class="section-body" id="serviceAreaSub">Serving Winnipeg, Regina, Calgary, and celebrations across Manitoba, Saskatchewan, and Alberta — from
           big-city venues to the small towns in between.</p>
       </div>
-      <div class="locations-grid reveal">
+      <div class="locations-grid reveal" id="locationChips">
         <div class="location-chip">
           <div class="location-chip-dot"></div>Winnipeg, MB
         </div>
@@ -2986,6 +2986,22 @@
         title: 'Trident Photobooths — Photo & Video Booth Rentals | Manitoba, Saskatchewan & Alberta',
         desc: 'Premium photo and video booth rentals for weddings and events across Manitoba, Saskatchewan, and Alberta. Open Air, 360-degree, and Glam booth experiences — serving Winnipeg, Regina, Brandon, Calgary, and communities across the prairies.',
         canonical: 'https://www.tridentphotobooths.ca',
+        areaSub: 'Serving Winnipeg, Regina, Calgary, and celebrations across Manitoba, Saskatchewan, and Alberta — from big-city venues to the small towns in between.',
+        towns: [
+          'Winnipeg, MB',
+          'Regina, SK',
+          'Calgary, AB',
+          'Saskatoon, SK',
+          'Brandon, MB',
+          'Portage la Prairie, MB',
+          'Steinbach, MB',
+          'Selkirk, MB',
+          'Winkler, MB',
+          'Morden, MB',
+          'Moose Jaw, SK',
+          'Dauphin, MB',
+          'Swan River, MB',
+        ],
       },
       brandon: {
         label: 'Brandon, MB',
@@ -2994,6 +3010,20 @@
         title: 'Trident Photobooths Brandon MB — Photo & Video Booth Rentals | Weddings & Events',
         desc: "Brandon's premier photo and video booth rental service. Open Air, 360, and Glam booths for weddings, corporate events, and galas. Based in Brandon, Manitoba.",
         canonical: 'https://www.tridentphotobooths.ca/?location=brandon',
+        areaSub: 'Serving Brandon and communities across Westman — from Virden and Souris to Neepawa, Minnedosa, and the small towns in between.',
+        towns: [
+          'Brandon, MB',
+          'Virden, MB',
+          'Souris, MB',
+          'Neepawa, MB',
+          'Minnedosa, MB',
+          'Carberry, MB',
+          'Killarney, MB',
+          'Boissevain, MB',
+          'Rivers, MB',
+          'Portage la Prairie, MB',
+          'Dauphin, MB',
+        ],
       },
       winnipeg: {
         label: 'Winnipeg, MB',
@@ -3002,6 +3032,20 @@
         title: 'Trident Photobooths Winnipeg MB — Photo & Video Booth Rentals | Weddings & Events',
         desc: "Winnipeg's finest photo and video booth rentals. Open Air, 360, and Glam booths for weddings, galas, and corporate events across the capital of Manitoba.",
         canonical: 'https://www.tridentphotobooths.ca/?location=winnipeg',
+        areaSub: 'Serving Winnipeg and communities across southern Manitoba — from Steinbach and Selkirk to Portage la Prairie, Winkler, and the small towns in between.',
+        towns: [
+          'Winnipeg, MB',
+          'Steinbach, MB',
+          'Selkirk, MB',
+          'Portage la Prairie, MB',
+          'Winkler, MB',
+          'Morden, MB',
+          'Stonewall, MB',
+          'Gimli, MB',
+          'Beausejour, MB',
+          'Niverville, MB',
+          'Morris, MB',
+        ],
       },
       regina: {
         label: 'Regina, SK',
@@ -3010,6 +3054,20 @@
         title: 'Trident Photobooths Regina SK — Photo & Video Booth Rentals | Weddings & Events',
         desc: 'Premium photo and video booth rentals in Regina, Saskatchewan. Open Air, 360, and Glam booth experiences for weddings, corporate events, and celebrations.',
         canonical: 'https://www.tridentphotobooths.ca/?location=regina',
+        areaSub: 'Serving Regina and communities across southern Saskatchewan — from Moose Jaw and Weyburn to Yorkton, Estevan, and the small towns in between.',
+        towns: [
+          'Regina, SK',
+          'Moose Jaw, SK',
+          'Weyburn, SK',
+          'Estevan, SK',
+          'Yorkton, SK',
+          "Fort Qu'Appelle, SK",
+          'Indian Head, SK',
+          'White City, SK',
+          'Lumsden, SK',
+          'Melville, SK',
+          'Balgonie, SK',
+        ],
       },
       calgary: {
         label: 'Calgary, AB',
@@ -3018,6 +3076,20 @@
         title: 'Trident Photobooths Calgary AB — Photo & Video Booth Rentals | Weddings & Events',
         desc: 'Premium photo and video booth rentals in Calgary, Alberta. Open Air, 360, and Glam booth experiences for weddings, corporate events, and celebrations.',
         canonical: 'https://www.tridentphotobooths.ca/?location=calgary',
+        areaSub: 'Serving Calgary and communities across southern Alberta — from Airdrie and Okotoks to Canmore, Banff, and the small towns in between.',
+        towns: [
+          'Calgary, AB',
+          'Airdrie, AB',
+          'Okotoks, AB',
+          'Cochrane, AB',
+          'Chestermere, AB',
+          'Canmore, AB',
+          'Banff, AB',
+          'High River, AB',
+          'Strathmore, AB',
+          'Red Deer, AB',
+          'Olds, AB',
+        ],
       },
     };
 
@@ -3041,6 +3113,17 @@
       document.getElementById('ogDesc').setAttribute('content', data.desc);
       document.getElementById('twTitle').setAttribute('content', data.title);
       document.getElementById('twDesc').setAttribute('content', data.desc);
+      // Service area: only the towns near the selected location
+      document.getElementById('serviceAreaSub').textContent = data.areaSub;
+      const grid = document.getElementById('locationChips');
+      grid.replaceChildren(...[...data.towns, 'And more...'].map(town => {
+        const chip = document.createElement('div');
+        chip.className = 'location-chip';
+        const dot = document.createElement('div');
+        dot.className = 'location-chip-dot';
+        chip.append(dot, town);
+        return chip;
+      }));
     }
 
     /* ---- location routing ---- */

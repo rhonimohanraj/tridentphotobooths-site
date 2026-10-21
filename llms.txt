@@ -34,6 +34,8 @@ Business: Trident Event Group Inc., 19 Premier Avenue, Brandon, MB R7B 3N9, Cana
 ## Pages
 
 - [Home (Markdown)](https://www.tridentphotobooths.ca/index.md): booths, features, reviews, service area, FAQ, contact. HTML: https://www.tridentphotobooths.ca/
+- [Brandon (Markdown)](https://www.tridentphotobooths.ca/brandon.md): photo booth rentals in Brandon and Westman, venues, travel notes, FAQ. HTML: https://www.tridentphotobooths.ca/brandon
+- [Winnipeg (Markdown)](https://www.tridentphotobooths.ca/winnipeg.md): photo booth rentals in Winnipeg and the Capital Region, venues, FAQ. HTML: https://www.tridentphotobooths.ca/winnipeg
 - [About (Markdown)](https://www.tridentphotobooths.ca/about.md): who we are and where we work. HTML: https://www.tridentphotobooths.ca/about
 - [Contact (Markdown)](https://www.tridentphotobooths.ca/contact.md): email, phone, address, service area. HTML: https://www.tridentphotobooths.ca/contact
 - [Inquire (Markdown)](https://www.tridentphotobooths.ca/inquiry.md): booking inquiry form. HTML: https://www.tridentphotobooths.ca/inquiry.html

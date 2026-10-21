@@ -1,10 +1,16 @@
 {
+  "redirects": [
+    { "source": "/home-winnipeg", "destination": "/winnipeg", "permanent": true },
+    { "source": "/home-winnipeg/", "destination": "/winnipeg", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/gallery", "destination": "/gallery.html" },
     { "source": "/inquiry", "destination": "/inquiry.html" },
+    { "source": "/brandon", "destination": "/brandon.html" },
+    { "source": "/winnipeg", "destination": "/winnipeg.html" },
     { "source": "/:page.html.md", "destination": "/:page.md" }
   ],
   "headers": [

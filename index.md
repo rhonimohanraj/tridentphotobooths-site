@@ -81,7 +81,12 @@ Serving Winnipeg, Regina, Calgary, and celebrations across Manitoba, Saskatchewa
 
 Winnipeg, MB · Regina, SK · Calgary, AB · Saskatoon, SK · Brandon, MB · Portage la Prairie, MB · Steinbach, MB · Selkirk, MB · Winkler, MB · Morden, MB · Moose Jaw, SK · Dauphin, MB · Swan River, MB · and more.
 
-Local pages on the homepage:
+City pages (venues, travel notes, FAQs):
+
+- Photo booth rental company in Brandon: https://www.tridentphotobooths.ca/brandon (Markdown: https://www.tridentphotobooths.ca/brandon.md)
+- Photo booth rental company in Winnipeg: https://www.tridentphotobooths.ca/winnipeg (Markdown: https://www.tridentphotobooths.ca/winnipeg.md)
+
+Local views of the homepage:
 
 - Brandon, MB (and Westman: Virden, Souris, Neepawa, Minnedosa, Carberry, Killarney, Boissevain, Rivers, Portage la Prairie, Dauphin): https://www.tridentphotobooths.ca/?location=brandon
 - Winnipeg, MB (and southern Manitoba: Steinbach, Selkirk, Portage la Prairie, Winkler, Morden, Stonewall, Gimli, Beausejour, Niverville, Morris): https://www.tridentphotobooths.ca/?location=winnipeg
@@ -127,6 +132,7 @@ The open-air and glam booths can comfortably fit groups of 2–10+ guests per se
 ## Pages
 
 - Home: https://www.tridentphotobooths.ca/
+- Brandon: https://www.tridentphotobooths.ca/brandon · Winnipeg: https://www.tridentphotobooths.ca/winnipeg
 - Gallery: https://www.tridentphotobooths.ca/gallery.html (Markdown: https://www.tridentphotobooths.ca/gallery.md)
 - Inquire: https://www.tridentphotobooths.ca/inquiry.html (Markdown: https://www.tridentphotobooths.ca/inquiry.md)
 - About: https://www.tridentphotobooths.ca/about (Markdown: https://www.tridentphotobooths.ca/about.md)

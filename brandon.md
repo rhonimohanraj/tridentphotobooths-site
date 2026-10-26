@@ -56,6 +56,9 @@ Yes. The 360 booth is a slow-motion video platform: an arm sweeps around up to 6
 **Is an attendant included?**
 Yes. Every package includes a professional on-site attendant who sets up the booth, helps your guests with props and poses, keeps the line moving and handles teardown at the end of the night. For a Brandon wedding or corporate party, that means one less thing for you or your venue staff to manage.
 
+**Do you bring photo booths to events outside Brandon?**
+Yes. Westman events are a regular drive for us. Clients have booked our booths for Tundra Oil & Gas Place in Virden, the Shamrock Centre in Killarney and the community hall in Deloraine, and we also cover Souris, Neepawa, Minnedosa, Carberry and Shilo. A travel fee may apply depending on distance, and it is listed in your quote before you book.
+
 Planning an event in the capital? See our [photo booth rentals in Winnipeg](https://www.tridentphotobooths.ca/winnipeg).
 
 ## Book

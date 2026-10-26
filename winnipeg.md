@@ -37,6 +37,10 @@ Outside the Perimeter we travel to Selkirk, Steinbach, Stonewall, Oak Bluff, Hea
 
 **Getting around the Capital Region:** Selkirk is about 35 minutes from downtown Winnipeg, Steinbach about 50 minutes, and Gimli and Portage la Prairie about an hour. Brandon, our home base, is about 2 h 15 min west on the Trans-Canada. A travel fee may apply depending on distance, and it is shown in your quote.
 
+## Corporate photo booth rentals in Winnipeg
+
+For company parties, galas, product launches and conferences, the booth can carry your company's branding from the backdrop to the print template. The 360 booth suits launches and staff parties, and the Glam booth's black and white portraits fit an awards night or gala. An on-site attendant runs the booth for the whole event, so your team can stay with your guests. Each corporate booking is quoted for the booth, hours and date.
+
 **Trident Photobooths, Winnipeg:** 425 Ballantrae Dr Suite 110, Winnipeg, MB R3T 6H6 · [+1-431-441-2676](tel:+14314412676) · [hello@tridenteventgroup.ca](mailto:hello@tridenteventgroup.ca)
 
 ## Winnipeg photo booth questions
@@ -55,6 +59,9 @@ Yes, the 360 booth comes to Winnipeg events. Up to 6 guests step onto the LED pl
 
 **Is an attendant included?**
 Every Winnipeg package includes a professional on-site attendant. They set up before guests arrive, run the booth all night, help people with props and poses, and pack everything up at the end, so your planner and the venue staff can focus on the rest of the event.
+
+**Can the photo booth be branded for a Winnipeg corporate event?**
+Yes. Every package includes a custom template you approve before the event, so prints and digital copies can carry your logo, colours and event name. The 360 booth adds your overlays, music and branding to each slow-motion clip, and guests get their photos or clips right away by text or QR code. Send the date, venue and guest count, and we will reply with booth options and a quote.
 
 Celebrating in Westman? See our [photo booth rentals in Brandon](https://www.tridentphotobooths.ca/brandon).
 

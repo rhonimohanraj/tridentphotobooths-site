@@ -59,7 +59,10 @@ Yes. Every package includes a professional on-site attendant who sets up the boo
 **Do you bring photo booths to events outside Brandon?**
 Yes. Westman events are a regular drive for us. Clients have booked our booths for Tundra Oil & Gas Place in Virden, the Shamrock Centre in Killarney and the community hall in Deloraine, and we also cover Souris, Neepawa, Minnedosa, Carberry and Shilo. A travel fee may apply depending on distance, and it is listed in your quote before you book.
 
-Planning an event in the capital? See our [photo booth rentals in Winnipeg](https://www.tridentphotobooths.ca/winnipeg).
+**Can we book a photo booth for a social in Brandon?**
+Yes. Our booth has been booked for socials around Brandon, including a pre-wedding social at the Royal Canadian Legion Branch 3 and another in Boissevain. The template can carry the couple's names and the date, the Open Air booth gives guests unlimited prints, and the attendant runs the booth for the whole social so the hosts can enjoy the night. Send the hall and the date, and we'll quote it.
+
+Planning an event in the capital? See our [photo booth rental in Winnipeg](https://www.tridentphotobooths.ca/winnipeg).
 
 ## Book
 

@@ -1,4 +1,4 @@
-# Photo booth rentals in Winnipeg, Manitoba
+# Photo booth rental in Winnipeg, Manitoba
 
 Open Air, 360 and Glam booths for Winnipeg weddings, galas and company parties, each one run by an attendant.
 
@@ -37,6 +37,10 @@ Outside the Perimeter we travel to Selkirk, Steinbach, Stonewall, Oak Bluff, Hea
 
 **Getting around the Capital Region:** Selkirk is about 35 minutes from downtown Winnipeg, Steinbach about 50 minutes, and Gimli and Portage la Prairie about an hour. Brandon, our home base, is about 2 h 15 min west on the Trans-Canada. A travel fee may apply depending on distance, and it is shown in your quote.
 
+## Wedding photo booth rentals in Winnipeg
+
+For a Winnipeg wedding, the print template carries your names and date, and you approve the design before the day. The Open Air booth gives guests unlimited prints and sends copies to their phones by text or QR code. The Glam booth makes black and white portraits on premium paper, and the 360 booth sends each slow-motion clip to guests as a shareable link. An attendant sets up before guests arrive and runs the booth through the reception. Each wedding is quoted for the booth, hours and date.
+
 ## Corporate photo booth rentals in Winnipeg
 
 For company parties, galas, product launches and conferences, the booth can carry your company's branding from the backdrop to the print template. The 360 booth suits launches and staff parties, and the Glam booth's black and white portraits fit an awards night or gala. An on-site attendant runs the booth for the whole event, so your team can stay with your guests. Each corporate booking is quoted for the booth, hours and date.
@@ -62,6 +66,9 @@ Every Winnipeg package includes a professional on-site attendant. They set up be
 
 **Can the photo booth be branded for a Winnipeg corporate event?**
 Yes. Every package includes a custom template you approve before the event, so prints and digital copies can carry your logo, colours and event name. The 360 booth adds your overlays, music and branding to each slow-motion clip, and guests get their photos or clips right away by text or QR code. Send the date, venue and guest count, and we will reply with booth options and a quote.
+
+**Have you set up a photo booth at Winnipeg venues before?**
+Yes. Our Glam booth has been at weddings at the RBC Convention Centre and the Winnipeg Art Gallery, and we brought a booth to a corporate event at The Leaf in Assiniboine Park. For any other Winnipeg room, send the venue with your date and we'll confirm the floor space, power and load-in ahead of time, so the booth is ready before your first guests arrive.
 
 Celebrating in Westman? See our [photo booth rentals in Brandon](https://www.tridentphotobooths.ca/brandon).
 

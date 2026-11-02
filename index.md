@@ -84,7 +84,8 @@ Winnipeg, MB · Regina, SK · Calgary, AB · Saskatoon, SK · Brandon, MB · Por
 City pages (venues, travel notes, FAQs):
 
 - Photo booth rental company in Brandon: https://www.tridentphotobooths.ca/brandon (Markdown: https://www.tridentphotobooths.ca/brandon.md)
-- Photo booth rental company in Winnipeg: https://www.tridentphotobooths.ca/winnipeg (Markdown: https://www.tridentphotobooths.ca/winnipeg.md)
+- Photo booth rental in Winnipeg: https://www.tridentphotobooths.ca/winnipeg (Markdown: https://www.tridentphotobooths.ca/winnipeg.md)
+- Wedding photo booth rentals in Winnipeg: https://www.tridentphotobooths.ca/winnipeg#weddings
 - Corporate photo booth rentals in Winnipeg: https://www.tridentphotobooths.ca/winnipeg#corporate
 
 Local views of the homepage:

@@ -62,6 +62,9 @@ Yes. Westman events are a regular drive for us. Clients have booked our booths f
 **Can we book a photo booth for a social in Brandon?**
 Yes. Our booth has been booked for socials around Brandon, including a pre-wedding social at the Royal Canadian Legion Branch 3 and another in Boissevain. The template can carry the couple's names and the date, the Open Air booth gives guests unlimited prints, and the attendant runs the booth for the whole social so the hosts can enjoy the night. Send the hall and the date, and we'll quote it.
 
+**How many hours should we book the photo booth for?**
+Our bookings come in two lengths: 4 hours or the full event. Four hours suits a wedding reception or social from the end of dinner to midnight, when guests are up and dancing. A full-event booking runs the booth from the time doors open, so it is part of the night from the first guest to the last song. Either way, your attendant sets up before guests arrive. Send your timeline and we will quote the hours that fit.
+
 Planning an event in the capital? See our [photo booth rental in Winnipeg](https://www.tridentphotobooths.ca/winnipeg).
 
 ## Book

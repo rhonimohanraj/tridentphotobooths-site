@@ -41,7 +41,7 @@ Outside the Perimeter we travel to Selkirk, Steinbach, Stonewall, Oak Bluff, Hea
 
 For a Winnipeg wedding, the print template carries your names and date, and you approve the design before the day. The Open Air booth gives guests unlimited prints and sends copies to their phones by text or QR code. The Glam booth makes black and white portraits on premium paper, and the 360 booth sends each slow-motion clip to guests as a shareable link. An attendant sets up before guests arrive and runs the booth through the reception. Each wedding is quoted for the booth, hours and date.
 
-## Corporate photo booth rentals in Winnipeg
+## Photo booth rentals for corporate events in Winnipeg
 
 For company parties, galas, product launches and conferences, the booth can carry your company's branding from the backdrop to the print template. The 360 booth suits launches and staff parties, and the Glam booth's black and white portraits fit an awards night or gala. An on-site attendant runs the booth for the whole event, so your team can stay with your guests. Each corporate booking is quoted for the booth, hours and date.
 
@@ -69,6 +69,9 @@ Yes. Every package includes a custom template you approve before the event, so p
 
 **Have you set up a photo booth at Winnipeg venues before?**
 Yes. Our Glam booth has been at weddings at the RBC Convention Centre and the Winnipeg Art Gallery, and we brought a booth to a corporate event at The Leaf in Assiniboine Park. For any other Winnipeg room, send the venue with your date and we'll confirm the floor space, power and load-in ahead of time, so the booth is ready before your first guests arrive.
+
+**Do we get copies of all the photos after the event?**
+Yes. Along with the prints and the copies guests send to their phones on the night, our photo booth packages include an online gallery of the photos taken at the booth. It is the easiest way to find the shots of guests you missed, share them with family after a Winnipeg wedding, or pass a company party's photos to your marketing team. 360 clips arrive as shareable links.
 
 Celebrating in Westman? See our [photo booth rentals in Brandon](https://www.tridentphotobooths.ca/brandon).
 

@@ -27,6 +27,12 @@ We do not sell your personal information.
 
 Our website uses analytics tools that set cookies to measure traffic and usage in aggregate. You can block or delete cookies in your browser settings; the site will still work.
 
+## Advertising and remarketing
+
+We use Google Analytics and advertising tools from Google and Meta (Facebook and Instagram) to measure which pages and ads lead to inquiries, and to show our ads to people who have visited this site. These tools use cookies and similar technologies. Google may connect visits across your devices if you are signed in to a Google account with ad personalization turned on. When you submit an inquiry form, these tools are told that a form was sent; the answers you type stay with us.
+
+You can turn off personalized ads in [Google ad settings](https://adssettings.google.com) and in your [Meta ad preferences](https://accountscenter.facebook.com/ad_preferences), install the [Google Analytics opt-out add-on](https://tools.google.com/dlpage/gaoptout), or block cookies in your browser.
+
 ## Sharing
 
 We share personal information only with service providers we need to run our business and deliver your event, such as our booking/CRM software, payment processors, email and messaging providers, photo delivery and hosting services, and analytics tools. These providers may store information outside Canada and are expected to protect it. We may also disclose information where required by law.

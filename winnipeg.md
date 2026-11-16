@@ -73,6 +73,9 @@ Yes. Our Glam booth has been at weddings at the RBC Convention Centre and the Wi
 **Do we get copies of all the photos after the event?**
 Yes. Along with the prints and the copies guests send to their phones on the night, our photo booth packages include an online gallery of the photos taken at the booth. It is the easiest way to find the shots of guests you missed, share them with family after a Winnipeg wedding, or pass a company party's photos to your marketing team. 360 clips arrive as shareable links.
 
+**Do you bring props and a backdrop to Winnipeg venues?**
+Yes. Our packages include a backdrop and props, and your attendant sets them up before guests arrive and packs them away at the end of the night. You choose the backdrop from our collection to suit your Winnipeg venue and colours, and the print template is designed with your names and date or your company logo.
+
 Celebrating in Westman? See our [photo booth rentals in Brandon](https://www.tridentphotobooths.ca/brandon).
 
 ## Book

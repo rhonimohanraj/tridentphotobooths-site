@@ -65,6 +65,9 @@ Yes. Our booth has been booked for socials around Brandon, including a pre-weddi
 **How many hours should we book the photo booth for?**
 Our bookings come in two lengths: 4 hours or the full event. Four hours suits a wedding reception or social from the end of dinner to midnight, when guests are up and dancing. A full-event booking runs the booth from the time doors open, so it is part of the night from the first guest to the last song. Either way, your attendant sets up before guests arrive. Send your timeline and we will quote the hours that fit.
 
+**How many people fit in the photo booth at once?**
+The Open Air and Glam booths fit groups of 2 to 10 or more in one photo, which suits a wedding party or a whole table at a Brandon social. The 360 booth holds up to 6 guests on the platform at a time, depending on the setup. Your attendant helps big groups squeeze into the frame and keeps the line moving between sessions.
+
 Planning an event in the capital? See our [photo booth rental in Winnipeg](https://www.tridentphotobooths.ca/winnipeg).
 
 ## Book

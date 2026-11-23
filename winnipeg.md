@@ -76,6 +76,9 @@ Yes. Along with the prints and the copies guests send to their phones on the nig
 **Do you bring props and a backdrop to Winnipeg venues?**
 Yes. Our packages include a backdrop and props, and your attendant sets them up before guests arrive and packs them away at the end of the night. You choose the backdrop from our collection to suit your Winnipeg venue and colours, and the print template is designed with your names and date or your company logo.
 
+**How early does the photo booth set up for a Winnipeg corporate event?**
+We usually arrive about an hour before the booth opens, so the backdrop, lighting and your branded template are tested before guests line up. For downtown hotels and convention centres, we confirm the load-in time, loading entrance and power with the venue ahead of the day. Tell us when your program starts and whether the booth should open at cocktails or after dinner, and we'll plan the timing around it.
+
 Celebrating in Westman? See our [photo booth rentals in Brandon](https://www.tridentphotobooths.ca/brandon).
 
 ## Book
